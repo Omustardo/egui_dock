@@ -571,7 +571,7 @@ impl<Tab> Tree<Tab> {
 
     /// Sets the currently focused leaf to `node_index` if the node at `node_index` is a leaf.
     ///
-    /// This method will not never panic and instead removes focus from all nodes when given an invalid index.
+    /// This method will never panic and instead removes focus from all nodes when given an invalid index.
     #[inline]
     pub fn set_focused_node(&mut self, node_index: NodeIndex) {
         self.focused_node = self
